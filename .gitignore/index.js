@@ -36,7 +36,7 @@ bot.on('message', message => {
             .addField("Interaction", "ping : Le bot répond pong")
             .setFooter("C'est tout pour ce embed")
         //message.channel.sendEmbed(help_embed);       
-        message.channel.send("Voici les commandes du bot :\n-***>help*** : afficher les commandes.\n-***>newstory*** : Permet de mettre un histoire à la base de données, qui pourra être lu par tout le monde !\n-***>tellstory*** : Permet de lire un histoire de toute la base de données aléatoirement !\n-***ping*** : il vous ponguera !\n-***>humeur*** : il vous répondra !\n-***>adj*** : Fera une annonce pour dire bonne journée !");
+        message.channel.send("Voici les commandes du bot :\n-***>help*** : afficher les commandes.\n-***ping*** : il vous ponguera !\n-***>humeur*** : il vous répondra !\n-***>adj*** : Fera une annonce pour dire bonne journée !");
         console.log("Commande Help demandée !")
     }
 
