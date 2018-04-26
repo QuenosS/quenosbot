@@ -5,7 +5,7 @@ var prefix = (">")
 var randum = 0
 
 bot.on('ready', () => {
-    bot.user.setPresence({game: { name: '[>help] = Aide', type: 0}});
+    bot.user.setPresence({game: { name: '© Quenos 2018', type: 0}});
     console.log("Bot Ready :");
 })
 
