@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+const client = new Discord.Client();
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 
@@ -11,14 +11,14 @@ db.defaults({ histoires: [], xp: []}).write()
 var prefix = (">")
 var randum = 0
 
-bot.on('ready', () => {
-    bot.user.setPresence({game: { name: '[>help] = Aide', type: 0}});
-    console.log("Bot Ready :");
+client.on('ready', () => {
+    client.user.setPresence({game: { name: '© Quenos 2018', type: 0}});
+    console.log(`Logged in as ${client.user.tag}!`);
 })
 
-bot.login('NDE4ODY5ODk2MjYxMjcxNTUy.DX3f2A.EZO3rVrnaViRIhFNTnklLApRGoo');
+client.login('NDE4ODY5ODk2MjYxMjcxNTUy.DX3f2A.EZO3rVrnaViRIhFNTnklLApRGoo');
 
-bot.on('message', message => {
+client.on('message', message => {
     if (message.content === "ping"){
         message.reply("pong");
         console.log('ping pong');
@@ -171,6 +171,7 @@ bot.on('message', message => {
         message.channel.send("Bonsoir, " + message.author) 
     }
 });
+
 
 
 function random(min, max) {
